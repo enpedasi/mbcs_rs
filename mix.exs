@@ -5,7 +5,13 @@ defmodule MbcsRs.MixProject do
     [
       app: :mbcs_rs,
       version: "0.1.0",
-      elixir: "~> 1.7",
+      elixir: "~> 1.6",
+      description: "MBCS converter using ruster with encoding crate",
+      package: [
+        maintainers: ["enpedasi"],
+        licenses: ["MIT"],
+        links: %{"GitHub" => "https://github.com/enpedasi/mbcs_rs"}
+      ],
       compilers: [:rustler] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       rustler_crates: rustler_crates(),
@@ -23,8 +29,7 @@ defmodule MbcsRs.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
+      {:ex_doc, "~> 0.19.1", runtime: false, only: :dev },
       {:credo, "~> 0.9.3", runtime: false, only: [:dev, :test]},
       {:dialyxir, "~> 0.5", only: [:dev, :test], runtime: false},
       {:rustler, "~> 0.18.0"}
@@ -35,7 +40,6 @@ defmodule MbcsRs.MixProject do
     [
       mbcs_rs: [
         path: "native/mbcs_rs",
-        # (if Mix.env == :prod, do: :release, else: :debug),
         mode: :release
       ]
     ]
