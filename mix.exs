@@ -29,7 +29,7 @@ defmodule MbcsRs.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_doc, "~> 0.19.1", runtime: false, only: :dev },
+      {:ex_doc, "~> 0.19.1", runtime: false, only: [:dev, :test]},
       {:credo, "~> 0.9.3", runtime: false, only: [:dev, :test]},
       {:dialyxir, "~> 0.5", only: [:dev, :test], runtime: false},
       {:rustler, "~> 0.18.0"}
