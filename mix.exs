@@ -10,7 +10,8 @@ defmodule MbcsRs.MixProject do
       package: [
         maintainers: ["enpedasi"],
         licenses: ["MIT"],
-        links: %{"GitHub" => "https://github.com/enpedasi/mbcs_rs"}
+        links: %{"GitHub" => "https://github.com/enpedasi/mbcs_rs"},
+        files: ["lib", "native", "mix.exs", "README.md", "LICENSE"]
       ],
       compilers: [:rustler] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
