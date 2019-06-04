@@ -11,8 +11,8 @@ matrix:
       elixir: 1.7.2
 
 before_install:
-  - sh ~/rust/lib/rustlib/uninstall.sh
-  - export PATH="$PATH:$HOME/.cargo/bin"
+  - rustc -V
+  - cargo -V
   - curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain=$TRAVIS_RUST_VERSION
   - rustc -V
   - cargo -V
