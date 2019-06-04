@@ -11,7 +11,7 @@ matrix:
       elixir: 1.7.2
 
 before_install:
-  - curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain=$TRAVIS_RUST_VERSION
+  - curl curl https://sh.rustup.rs -sSf | sh
   - rustc -V
   - cargo -V
 
