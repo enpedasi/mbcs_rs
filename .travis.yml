@@ -12,8 +12,6 @@ matrix:
 
 before_install:
   - curl https://sh.rustup.rs -sSf | sh
-  - rustc -V
-  - cargo -V
 
 install:
   - mix local.rebar --force
