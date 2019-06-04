@@ -23,6 +23,7 @@ before_script:
   - mix deps.get --only test
 
 script:
+  - source $HOME/.cargo/env
   - mix credo
   - mix format --check-formatted
   - mix test
