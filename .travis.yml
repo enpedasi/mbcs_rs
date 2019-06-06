@@ -9,6 +9,8 @@ matrix:
   include:
     - otp_release: 21.0
       elixir: 1.7.2
+   - otp_release: 22.0
+      elixir: 1.8.2
 
 before_install:
   - curl https://sh.rustup.rs -sSf | sh -s -- -y
