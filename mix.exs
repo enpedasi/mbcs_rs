@@ -4,7 +4,7 @@ defmodule MbcsRs.MixProject do
   def project do
     [
       app: :mbcs_rs,
-      version: "0.1.1",
+      version: "0.1.2",
       elixir: "~> 1.6",
       description: "MBCS converter using ruster with encoding crate",
       package: [
@@ -33,7 +33,7 @@ defmodule MbcsRs.MixProject do
       {:ex_doc, "~> 0.19.1", runtime: false, only: [:dev, :test]},
       {:credo, "~> 0.9.3", runtime: false, only: [:dev, :test]},
       {:dialyxir, "~> 0.5", only: [:dev, :test], runtime: false},
-      {:rustler, "~> 0.18.0"}
+      {:rustler, "~> 0.20"}
     ]
   end
 
