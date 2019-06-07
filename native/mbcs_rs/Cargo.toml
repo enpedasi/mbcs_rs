@@ -1,6 +1,6 @@
 [package]
 name = "mbcs_rs"
-version = "0.1.0"
+version = "0.1.1"
 authors = []
 
 [lib]
@@ -9,7 +9,8 @@ path = "src/lib.rs"
 crate-type = ["dylib"]
 
 [dependencies]
-rustler = "0.20.0"
+rustler = { git = "https://github.com/rusterlium/rustler" }
 rustler_codegen = "0.20.0"
 lazy_static = "1.3.0"
 encoding = "0.2.33"
+
