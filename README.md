@@ -12,7 +12,7 @@ by adding `mbcs_rs` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:mbcs_rs, "~> 0.1.0"}
+    {:mbcs_rs, "~> 0.1"}
   ]
 end
 ```
